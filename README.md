@@ -154,9 +154,6 @@ Como este é um projeto de estudos, novas funcionalidades podem ser adicionadas 
 ## 🛠️ Tecnologias
 
 * **Java**
-* **IntelliJ IDEA**
-* **Git**
-* **GitHub**
 
 ## 📌 Status
 
