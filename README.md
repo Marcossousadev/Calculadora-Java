@@ -19,6 +19,69 @@ A calculadora permite realizar:
 * ⌨️ Entrada de dados pelo usuário
 * 🔄 Escolha da operação através de um menu
 * ⚠️ Tratamento de operações inválidas
+* ## 🧪 Como testar o projeto
+
+Para executar e testar o projeto localmente, siga os passos abaixo.
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/Marcossousadev/Estudos-Java.git
+```
+
+### 2. Acesse a pasta do projeto
+
+```bash
+cd Estudos-Java
+```
+
+### 3. Abra o projeto na IDE
+
+Abra o projeto utilizando uma IDE compatível com Java, como o **IntelliJ IDEA**.
+
+Certifique-se de que o **JDK esteja configurado corretamente**.
+
+### 4. Execute a aplicação
+
+Localize a classe:
+
+```text
+src/
+└── Main.java
+```
+
+Execute o método `main()` da classe `Main`.
+
+### 5. Realize os testes
+
+Ao iniciar a aplicação, será exibido um menu para escolher a operação:
+
+```text
+Digite o primeiro número: 10
+Digite o segundo número: 5
+
+Escolha uma operação:
+1 - Soma
+2 - Subtração
+3 - Divisão
+4 - Multiplicação
+
+Opção: 1
+
+Resultado: 15.0
+```
+
+Teste cada uma das operações disponíveis:
+
+| Opção | Operação      | Exemplo | Resultado |
+| ----- | ------------- | ------: | --------: |
+| 1     | Soma          |  10 + 5 |      15.0 |
+| 2     | Subtração     |  10 - 5 |       5.0 |
+| 3     | Divisão       |  10 / 5 |       2.0 |
+| 4     | Multiplicação |  10 × 5 |      50.0 |
+
+Também é possível testar entradas inválidas para verificar o tratamento de erros da aplicação.
+
 
 ## 🧠 Conceitos de Java e POO praticados
 
