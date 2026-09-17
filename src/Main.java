@@ -1,6 +1,7 @@
 import calculadora.Calculadora;
 import operacao.*;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -9,10 +10,26 @@ public class Main {
         Calculadora minhaCalculadora = new Calculadora(); // Instanciação
 
         System.out.println("Digite o primeiro número");
-        double numero1 = scanner.nextDouble(); // recebe o 1 número do terminal
+        double numero1;
+        // tratamento de exceções, esse scanner não pode receber letras
+        try {
+            numero1 = scanner.nextDouble(); // recebe o 1 número do terminal
+        }
+        catch(InputMismatchException exception) {
+            System.out.println("Erro: informe apenas números.");
+            return;
+        }
 
         System.out.println("Digite o segundo número:");
-        double numero2 = scanner.nextDouble(); // recebe o 2 número do terminal
+        double numero2;
+        // tratamento de exceções, esse scanner não pode receber letras
+        try {
+            numero2 = scanner.nextDouble(); // recebe o 2 número do terminal
+        }
+        catch(InputMismatchException exception){
+            System.out.println("Erro: informe apenas números.");
+            return;
+        }
 
         System.out.println("\nEscolha a operação");
         System.out.println("1 - Soma");
@@ -21,7 +38,15 @@ public class Main {
         System.out.println("4 - Multiplicação");
 
         System.out.println("Opção: ");
-        int opcao = scanner.nextInt(); // escolha da operação, via scanner
+        int opcao;
+        // tratamento de exceções, esse scanner não pode receber letras
+        try {
+            opcao = scanner.nextInt();
+        }
+        catch (InputMismatchException expection) {
+            System.out.println("Erro: informe apenas o número da operação!");
+            return;
+        }
 
         Operacao operacao;
         String nome_operacao;
