@@ -26,13 +26,13 @@ Para executar e testar o projeto localmente, siga os passos abaixo.
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/Marcossousadev/Estudos-Java.git
+git clone https://github.com/Marcossousadev/Calculadora-Java.git
 ```
 
 ### 2. Acesse a pasta do projeto
 
 ```bash
-cd Estudos-Java
+cd Calculadora-Java
 ```
 
 ### 3. Abra o projeto na IDE
